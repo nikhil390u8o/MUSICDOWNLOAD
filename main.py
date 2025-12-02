@@ -25,8 +25,8 @@ def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("SUPPORT", url="https://yourlink.com"),
-                    InlineKeyboardButton("ADD ME", url="")
+                    InlineKeyboardButton("SUPPORT", url="t.me/II_Sexcy_Jerry_ll"),
+                    InlineKeyboardButton("ADD ME", url="t.me/II_Sexcy_Jerry_ll")
                 ]
             ]
         )
@@ -61,7 +61,7 @@ def search_song(client, message):
         print(e)
         return
 
-    m.edit("🎧 Downloading...")
+    m.edit("🎧 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆...")
 
     try:
         with yt_dlp.YoutubeDL({"format": "bestaudio"}) as ydl:
@@ -81,7 +81,7 @@ def search_song(client, message):
     except Exception as e:
         m.edit("❌ Download Error!")
         print(e)
-
+        print("BOT IS ALIVE 😏")
     try:
         os.remove(audio_path)
         os.remove(thumb_name)
